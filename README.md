@@ -112,3 +112,12 @@ const subscription = client.subscribe(
 
 ## Examples
 Please check `test.js` for working examples
+
+### How to Run?
+~~~sh
+node test.js
+~~~
+or
+~~~sh
+npm test
+~~~

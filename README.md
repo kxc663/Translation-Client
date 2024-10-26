@@ -48,7 +48,7 @@ The TranslationClient library provides an easy-to-use interface for polling the 
 
 ### 1. Clone the Git Repo
 ~~~sh
-git clone
+git clone git@github.com:kxc663/Translation-Client.git
 ~~~
 
 ### 2. Install necessary packages

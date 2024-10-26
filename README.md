@@ -44,6 +44,16 @@ The TranslationClient library provides an easy-to-use interface for polling the 
 7. **Subscriptions**:
    - The `subscribe()` method allows external components to subscribe to the `statusSubject`, enabling them to react to changes in real-time.
 
+## Design Pattern: Observer
+
+The `TranslationClient` leverages the **Observer Design Pattern** to provide real-time updates on the translation status. 
+
+- **Observer Pattern Basics**: This pattern allows an object (the subject) to maintain a list of dependents (observers) and automatically notify them of state changes. 
+- **Implementation**: In `TranslationClient`, `statusSubject` from `rxjs/Subject` acts as the subject that observers can subscribe to for translation status updates.
+- **Benefits**:
+  - **Decoupling**: The client and any dependent components are loosely coupled; subscribers can react to status changes without modifying the `TranslationClient`.
+  - **Scalability**: Additional subscribers can be added with minimal code change, making it flexible and extensible.
+
 ## Installation
 
 ### 1. Clone the Git Repo

@@ -6,6 +6,14 @@ The TranslationClient library provides an easy-to-use interface for polling the 
 ### Implemented Examples using React in Project
 #### How to Run?
 ~~~sh
+npm install
+~~~
+
+~~~sh
+cd client && npm install
+~~~
+
+~~~sh
 npm start
 ~~~
 
@@ -13,6 +21,10 @@ npm start
 Please check `test.js` for integration testing
 
 #### How to Run?
+~~~sh
+npm install
+~~~
+
 ~~~sh
 node test.js
 ~~~

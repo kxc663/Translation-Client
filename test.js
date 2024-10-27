@@ -1,5 +1,5 @@
 import { spawn } from "child_process";
-import TranslationClient from "./TranslationClient.js"; 
+import TranslationClient from "./client/src/TranslationClient.mjs";
 
 // Start the server
 const serverProcess = spawn("node", ["server.js"], { stdio: "inherit" });
@@ -27,10 +27,8 @@ setTimeout(() => {
         onPending: () => console.log("Test: Translation is still pending..."),
     });
 
-    // Poll the server for status updates
     client.pollStatus();
 
-    // Subscribe to status updates from the client
     const subscription = client.subscribe(
         (status) => {
             console.log(`Status update from observable: ${status}`);

@@ -2,6 +2,25 @@
 
 The TranslationClient library provides an easy-to-use interface for polling the status of translation jobs from a server endpoint. It manages the polling logic internally, ensuring timely updates without overloading the server or causing unnecessary delays.
 
+## Examples
+### Implemented Examples using React in Project
+#### How to Run?
+~~~sh
+npm start
+~~~
+
+### Integration Testing
+Please check `test.js` for integration testing
+
+#### How to Run?
+~~~sh
+node test.js
+~~~
+or
+~~~sh
+npm test
+~~~
+
 ## Features
 
 - **Automated Polling**: Internally handles polling with customizable intervals.
@@ -109,15 +128,3 @@ const subscription = client.subscribe(
     }
 );
 ```
-
-## Examples
-Please check `test.js` for working examples
-
-### How to Run?
-~~~sh
-node test.js
-~~~
-or
-~~~sh
-npm test
-~~~
